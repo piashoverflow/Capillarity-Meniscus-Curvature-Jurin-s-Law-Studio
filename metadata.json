@@ -1,0 +1,6 @@
+{
+  "name": "Capillarity, Meniscus Curvature & Jurin's Law Studio",
+  "description": "Interactive computational physics laboratory for contact angles, capillary rise/depression, Laplace pressure, and Jurin's law paradoxes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
