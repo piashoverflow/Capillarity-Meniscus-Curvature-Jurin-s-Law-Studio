@@ -22,16 +22,16 @@ import {
 } from 'lucide-react';
 
 const INITIAL_STATE: PhysicsState = {
-  liquidId: 'water',
+  liquidId: 'custom',
   substrateId: 'glass',
-  surfaceTension: 0.0728,
+  surfaceTension: 0.050,
   density: 1000,
-  contactAngle: 5,
+  contactAngle: 60,
   gravity: 9.80,
 
   // Module 1
-  adhesionForce: 85,
-  cohesionForce: 45,
+  adhesionForce: 75,
+  cohesionForce: 50,
   showForceVectors: true,
   showGoniometer: true,
   showMolecularParticles: true,
@@ -110,17 +110,14 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-sky-200/90 shadow-sm px-3 sm:px-4 py-2.5">
         <div className="w-full flex flex-col md:flex-row md:items-center justify-between gap-3">
           
-          {/* Title (Image icon removed as requested) */}
-          <div className="flex flex-col">
+          {/* Title */}
+          <div className="flex items-center">
             <h1 className="text-sm sm:text-base md:text-lg font-black tracking-tight text-slate-950 flex items-center gap-2">
               {t.appTitle}
               <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
                 v2.4 Pro
               </span>
             </h1>
-            <p className="text-[11px] text-slate-700 font-medium hidden sm:block">
-              {t.subtitle}
-            </p>
           </div>
 
           {/* Module Selector Tabs */}
